@@ -1,0 +1,5 @@
+.contenedorTodo {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+}

@@ -1,0 +1,5 @@
+<button *ngIf="!isValid" class="dropbtnNotValid">{{Texto}}</button>
+
+<button *ngIf="isValid" class="dropbtn" [ngStyle]="{'background-color': Color}"
+[disabled]="!isValid"
+(click)="callParent()">{{Texto}}</button>

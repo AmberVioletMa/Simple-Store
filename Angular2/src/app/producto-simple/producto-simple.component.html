@@ -1,0 +1,19 @@
+<div class="productClass" *ngIf="(Product.Cat === Categoria || !Categoria) && Product.Disp !== 0">
+  <div class="image-main-section">
+    <div class="img-part">
+      <div class="img-section">
+        <div class="img-section2" [ngStyle]="{'background-image': 'url(' + Product.imagenU + ')' }"></div>
+      </div>
+      <div class="image-title">
+        <h3>{{Product.Cat}} {{Product.ID}}</h3>
+      </div>
+      <div class="image-description">
+        <p>
+          <b>Precio: </b> ${{Product.pesos}} MX</p>
+      </div>
+      <div class="divA">
+        <a id="{{Product.ID}}" (click)="changeButtonColor(Product.ID);" [ngClass]="{'buttonGris': Product.CBCx === 0, 'buttonColor': Product.CBCX !== 0}">ADD TO CAR</a>
+      </div>
+    </div>
+  </div>
+</div>

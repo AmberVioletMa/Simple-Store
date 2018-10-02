@@ -1,0 +1,128 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius: 30px;
+    background-color: #fefefe;
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    border: 1px solid #888;
+    overflow-x: scroll;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.LDCT{
+  padding-left: 6.5%;
+}
+
+.Horizontal{width:100%;height: 60px;}
+
+.box{height:60px;}
+
+.box:nth-child(1){
+  float:left;
+   width:25%;
+   text-align: center;
+   font-size: 20px;
+   line-height: 50px;
+}
+
+.box:nth-child(2){
+  float:left;
+   width:30%;
+}
+.box:nth-child(3){
+  float: right;
+  padding-right: 90px;
+}
+
+.boxP{float:left;inline-size: 120px; color: white; line-height: 120px; height:120px;border-bottom-color: rgb(255, 255, 255);border-bottom-style: solid;text-align: center;}
+
+.boxP:nth-child(1){
+  background-color: white;
+  width:20%;
+  overflow-y: scroll;
+  line-height: 50%;
+}
+
+.boxP:nth-child(2){
+  background-color:  #fd73aa;
+   width:45%;
+}
+.boxP:nth-child(3){
+  width:15%;
+  background-color:  #ff3d8b;
+}
+.boxP:nth-child(4){
+  background-color: #fd73aa;
+  width:20%;
+}
+
+.imm{
+  width: 100%;
+  position: relative;
+   top: -50%;
+}
+
+.DivLista{
+  width:100%;
+  height: 300px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #ff1a75;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.boxE{float:left; height:60px;text-align: center;line-height: 60px;}
+
+.boxE:nth-child(1){
+   width:15%;
+}
+
+.boxE:nth-child(2){
+   width:50%;
+}
+.boxE:nth-child(3){
+  width:15%;
+}
+.boxE:nth-child(4){
+  width:20%;
+}

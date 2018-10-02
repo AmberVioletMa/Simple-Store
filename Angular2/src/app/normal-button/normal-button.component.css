@@ -1,0 +1,19 @@
+/* Style The Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  min-width: 160px;
+}
+
+.dropbtnNotValid {
+  color: white;
+  background-color: #a3a375;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  min-width: 160px;
+}

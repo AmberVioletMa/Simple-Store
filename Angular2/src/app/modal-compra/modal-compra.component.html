@@ -1,0 +1,43 @@
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" (click)="close();">&times;</span>
+    <div class="Horizontal">
+      <div class="LDCT"><h1>Lista de compra</h1></div>
+    </div>
+    <br>
+  <div class="Horizontal">
+    <div class="box">Tipo de pago:</div>
+   <div class="box"> <app-drop-button [Titulo]="Tra.DropButtonLabel"
+    [Labels]= "[
+    'Recoger en tienda',
+    'Entrega a domicilio',
+    'Entrega por correo'
+    ]" [Color]="'#ff1a75'" [ServiceLabel]="'DropButtonLabel'"></app-drop-button></div>
+    <div class="box">
+        <app-normal-button [Texto]="'Total: ' + this.Tra.TotalAPagar" [Color]="'#ff1a75'" [isValid]="true"></app-normal-button>
+      </div>
+  </div>
+  <div class="Horizontal">
+      <div class="boxE">Nombre</div>
+      <div class="boxE"></div>
+      <div class="boxE">Precio</div>
+      <div class="boxE">Cantidad</div>
+  </div>
+  <div class="DivLista">
+  <div class="Horizontal" *ngFor="let item of Tra.ListaCompra; let i = index">
+    <div class="boxP"><img class="imm" src={{item.imagenU}}></div>
+    <div class="boxP">{{item.Cat}} {{item.ID}}</div>
+    <div class="boxP">{{(+item.pesos * item.Cantidad).toFixed(2)}}</div>
+    <div class="boxP"><app-rows-button  [index]="i" [Color]="'#ff1a75'"></app-rows-button></div>
+    </div>
+    </div>
+    <br>
+    <div class="Horizontal">
+    <app-forma-de-entrega  (closeModal)="close($event)"></app-forma-de-entrega>
+    </div>
+  </div>
+
+</div>

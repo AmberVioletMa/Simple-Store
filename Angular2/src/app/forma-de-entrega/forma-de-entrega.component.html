@@ -1,0 +1,52 @@
+<div class="form-container">
+  <h3>Formulario</h3>
+  <app-drop-button *ngIf="Tra.DropButtonLabel === 'Entrega por correo'" [Titulo]="Tra.DropButtonLabelPago"
+    [Labels]= "[
+    'Pago en oxxo',
+    'Deposito bancario',
+    'Transferencia Electronica'
+    ]" [Color]="'#ff1a75'" [ServiceLabel]="'DropButtonLabelPago'"></app-drop-button>
+  <form [formGroup]="formDatos">
+    <div class="form-group">
+      <label class="TextLabel">Nombre</label><br>
+      <input class="form-control InputGrande" type="text" formControlName="nombre" [ngClass]="{ 'is-invalid': nameIsInvalid }">
+      <p *ngIf="nameIsInvalid" class="alert">El campo es requerido</p>
+    </div>
+    <div class="form-group">
+      <label class="TextLabel">Apellido</label><br>
+      <input class="form-control InputGrande" type="text" formControlName="apellido">
+      <p *ngIf="ApellidoIsInvalid" class="alert">El campo es requerido</p>
+    </div>
+    <div class="form-group">
+      <label class="TextLabel">e-mail</label><br>
+      <input class="form-control InputGrande" type="text" formControlName="email">
+      <p *ngIf="EmailIsInvalid" class="alert">El correo no es valido</p>
+    </div>
+    <div class="form-group" *ngIf="Tra.DropButtonLabel !== 'Recoger en tienda'">
+      <label class="TextLabel">Direccion</label><br>
+      <input class="form-control InputGrande" type="text" formControlName="direccion">
+      <p *ngIf="DirreccionlIsInvalid" class="alert">Por favor ingrese una dirreccion</p>
+    </div>
+    <br>
+    <div class="form-group" *ngIf="Tra.DropButtonLabel === 'Entrega por correo'" style="float: right;">
+        <label class="TextLabel">Codigo Postal</label>
+        <input class="form-control InputChico" type="text" formControlName="CP" maxlength="5">
+        <p *ngIf="CPIsInvalid">El codigo Postal no es valido <span style="color: red; font-size: 25px;">&#33;</span></p>
+      </div>
+    <div class="form-group">
+      <label class="TextLabel">Terminos y condiciones<br>
+        blablablablablablablablablablablablablablablablablablablablablablablablablablabla
+        blablablablablablablablablablablablablablablablablablablablablablablablablablabla
+        blablablablablablablablablablablablablablablablablablablablablablablablablablabla
+        blablablablablablablablablablablablablablablablablablablablablablablablablablabla
+      </label>
+      <div class="radio">
+          <label><input type="radio" name="TC" [value]="true" formControlName="TC"> Acepto Terminos y Condiciones<span></span></label>
+        </div>
+    </div>
+    <br>
+      <app-normal-button  (ShowClick)="enviarForm($event)" [Texto]="'Enviar'" [Color]="'#ff1a75'" [isValid]="Complete"></app-normal-button>
+    <br>
+    <br>
+  </form>
+</div>

@@ -1,0 +1,29 @@
+
+
+#containerInfosimple {
+  background-color:  #ffe6ff;
+   height: 75%; width:100%;
+    font-size: 0;
+    padding-top: calc(1vh);
+    padding-bottom: calc(1vh);
+    padding-left: calc(.5vw);
+    padding-right: calc(.5vw);
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+   }
+   @media only screen and (min-height: 800px) {
+
+      #containerInfosimple {
+          background-color:  #ffe6ff;
+           height: 83%; width:100%;
+            font-size: 0;
+            padding-top: calc(1vh);
+            padding-bottom: calc(1vh);
+            padding-left: calc(.5vw);
+            padding-right: calc(.5vw);
+            margin-left: auto;
+            margin-right: auto;
+            overflow-y: scroll;
+           }
+   }
