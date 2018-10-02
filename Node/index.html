@@ -1,0 +1,330 @@
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href='main.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+       <link rel="stylesheet" href="css/style2.css">
+
+<!-- web icons -->
+    <link rel="icon" href="img/logo.png" />
+    <link rel="shortcut icon" href="img/logo.png" />
+
+
+<title>Accenture Proyects</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="app.js"></script>
+    
+
+<div style="height:100%;overflow-y:scroll;overflow-x: hidden; ">
+<style>
+body {margin:0;min-width: 1115px;}
+
+
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.Cursocelda {
+ width: 100%;
+ text-align: center;
+/* display: inline-block; */
+
+}
+
+#UserBorder {
+    border-radius: 25px;
+    background: white;
+    width: 300px;
+    height: 50px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    -webkit-animation: spand 1s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+    animation: spand 1s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@-webkit-keyframes spand {
+    from {width: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes spand {
+    from {width: 0px;}
+    to {left: 200px;}
+}
+.CColor {
+    -webkit-animation: colorname 1s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+    animation: colorname 1s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@-webkit-keyframes colorname {
+    from {color: white;}
+    to {color:rgb(114, 0, 125);}
+}
+
+@keyframes colorname {
+    from {color: white;}
+    to {color:rgb(114, 0, 125);}
+}
+
+
+#circle {
+    border-radius: 50%;
+    background: white;
+    padding: 20px; 
+    width: 100px;
+    height: 100px; 
+        margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px white;
+    background-size: 100%;
+    background-image: url("img/yo.jpg");
+
+
+}
+
+</style>
+
+<div class="Cursos" style="min-width: 588;">
+<div style="height:calc(100vh);background-color: #333;">
+
+<div id="barra" class="barranotodo">
+ <div class="container2" onclick="Open1();" style="border-top-width: 6px;border-bottom-width: 3px;border-right-width: 6px;border-left-width: 6px;">
+  <img src="img/curso1.jpg"  class="Cursocelda">
+  <div class="overlay">
+    <div class="text">Cursos</div>
+  </div>
+</div>
+ <div class="container2" onclick="Open2();"  style="border-top-width: 3px;border-bottom-width: 3px;border-right-width: 6px;border-left-width: 6px;">
+  <img src="img/curso2.jpg"  class="Cursocelda">
+  <div class="overlay">
+    <div  class="text">Mis Cursos</div>
+  </div>
+</div>
+ <div class="container2" onclick="Open3();" style="border-top-width: 3px;border-bottom-width: 3px;border-right-width: 6px;border-left-width: 6px;">
+  <img src="img/curso3.jpg"  class="Cursocelda">
+  <div class="overlay">
+    <div class="text"> Proponer Cursos</div>
+  </div>
+</div>
+ <div class="container2" onclick="Open4();" style="border-top-width: 3px;border-bottom-width: 3px;border-right-width: 6px;border-left-width: 6px;">
+  <img src="img/curso4.jpg"  class="Cursocelda">
+  <div class="overlay">
+    <div class="text">Administrar <Br> Solicitudes</div>
+  </div>
+</div>
+ <div class="container2" onclick="Open5();" style="border-top-width: 3px;border-bottom-width: 3px;border-right-width: 6px;border-left-width: 6px;">
+  <img src="img/curso5.jpg"  class="Cursocelda">
+  <div class="overlay">
+    <div class="text">Administrar Cursos</div>
+  </div>
+</div>
+<script>
+
+
+function Open1() { 
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+  modal1.style.display = "block";
+  modal2.style.display = "none";
+  modal3.style.display = "none";
+  modal4.style.display = "none";
+  modal5.style.display = "none";
+
+}
+function Open2() { 
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+  modal1.style.display = "none";
+  modal2.style.display = "block";
+  modal3.style.display = "none";
+  modal4.style.display = "none";
+  modal5.style.display = "none";
+}
+function Open3() { 
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+  modal1.style.display = "none";
+  modal2.style.display = "none";
+  modal3.style.display = "block";
+  modal4.style.display = "none";
+  modal5.style.display = "none";
+}
+function Open4() { 
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+  modal1.style.display = "none";
+  modal2.style.display = "none";
+  modal3.style.display = "none";
+  modal4.style.display = "block";
+  modal5.style.display = "none";
+}
+function Open5() { 
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+  modal1.style.display = "none";
+  modal2.style.display = "none";
+  modal3.style.display = "none";
+  modal4.style.display = "none";
+  modal5.style.display = "block";
+}
+</script>
+</div>
+<style>
+.container2 {
+  position: relative;
+  width: 100%;
+  border-style: solid;
+    border-color: black;
+
+
+
+}
+
+.image {
+   display: block;
+    margin: auto;
+
+    height: auto;
+    max-height: 100%;
+
+    width: auto;
+    max-width: 100%;
+
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.container2:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.box {
+    position: relative;
+    width:calc(100vw  - 256px);
+    height:100%;
+    overflow:hidden;
+}
+
+
+.barratodo{
+height:calc(100vh);
+overflow-y:scroll;
+overflow-x: hidden;
+background-color: #a9b8d1; 
+float:left;
+width:100vw;
+}
+.barranotodo{
+height:calc(100vh);
+overflow-y:scroll;
+overflow-x: hidden;
+background-color: #a9b8d1; 
+float:left;
+width:256px;
+min-width: 256px;
+}
+.userbox{float:left; height:100px;}
+
+.userbox:nth-child(1){
+   width:70%;
+}
+
+.userbox:nth-child(2){
+   width:30%;
+}
+</style>
+
+<div  id="myModal1" class="box" style='background-image:url("img/accenture.gif");background-size: cover;background-repeat: no-repeat;background-position: center;'>
+ <div style="position: absolute;top: 5%;right: 2%;display: table;height: 100px; width: 500px;">
+<div class="userbox"><div id="UserBorder" style="text-align: center;padding-top: 12.5px;font-size: 18px;color: white;">Buenos Días Amber..</div></div>
+<div class="userbox"><div id="circle"></div></div>
+ </div>
+  <canvas id="nokey" width="1500" height="1500" style="z-index:2;">
+</canvas>
+</div>
+</div>
+<div  id="myModal2" class="box" style='background-color: rgb(12,66,25);display: none;background-size: 100% 100%;' >
+</div>
+<div  id="myModal3" class="box" style='background-color: rgb(12,56,225);display: none;background-size: 100% 100%;' >
+</div>
+<div  id="myModal4" class="box" style='background-color: rgb(12,26,25);display: none;background-size: 100% 100%;' >
+</div>
+<div  id="myModal5" class="box" style='background-color: rgb(124,56,25);display: none; background-size: 100% 100%;' >
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+window.onload = function () { 
+    }
+    document.getElementById('UserBorder').addEventListener("webkitAnimationEnd", changeColor());
+function changeColor(){
+  document.getElementById('UserBorder').classList.add("CColor");
+}
+</script>
+  <script src="nokey.js"></script>
+</body>
+</html>
